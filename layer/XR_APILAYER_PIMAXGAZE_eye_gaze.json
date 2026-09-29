@@ -1,0 +1,11 @@
+{
+  "file_format_version": "1.0.0",
+  "api_layer": {
+    "name": "XR_APILAYER_PIMAXGAZE_eye_gaze",
+    "library_path": ".\\PimaxGazeLayer.dll",
+    "api_version": "1.0",
+    "implementation_version": "1",
+    "description": "Pimax gaze layer: replaces XR_EXT_eye_gaze_interaction poses with the camera-based estimate from the gaze service",
+    "disable_environment": "PIMAXGAZE_LAYER_DISABLE"
+  }
+}

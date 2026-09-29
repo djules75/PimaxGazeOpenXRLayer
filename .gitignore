@@ -1,0 +1,35 @@
+# Build output
+build/
+*.exe
+*.dll
+*.lib
+*.exp
+*.pdb
+
+# Packaged binaries: keep only the instructions
+dist/*/*
+!dist/*/README.md
+
+# Session data from calib_recorder (large, per session)
+calib-*-frames.csv
+calib-*-schedule.csv
+
+# Personal calibration: regenerate with tools/calib_fit.py --write-calib
+service/gaze_calib*.json
+
+# BrokenEye recordings and extracted frames, if ever copied here
+*.brokeneye
+wearable/
+
+# Python
+__pycache__/
+*.pyc
+
+# Editors / OS
+.vscode/
+.vs/
+Thumbs.db
+
+# Local-only notes, eye images and tools kept out of the public repo
+CLAUDE.local.md
+private/
